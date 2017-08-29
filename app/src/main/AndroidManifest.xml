@@ -53,17 +53,17 @@
 
         <!-- Required SDK 核心功能-->
         <!-- 可配置android:process参数将PushService放在其他进程中 -->
-        <service
-            android:name="cn.jpush.android.service.PushService"
-            android:process=":mult"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTER" />
-                <action android:name="cn.jpush.android.intent.REPORT" />
-                <action android:name="cn.jpush.android.intent.PushService" />
-                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
-            </intent-filter>
-        </service>
+        <!--<service-->
+            <!--android:name="cn.jpush.android.service.PushService"-->
+            <!--android:process=":mult"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.intent.REGISTER" />-->
+                <!--<action android:name="cn.jpush.android.intent.REPORT" />-->
+                <!--<action android:name="cn.jpush.android.intent.PushService" />-->
+                <!--<action android:name="cn.jpush.android.intent.PUSH_TIME" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <!-- Required SDK核心功能-->
         <receiver
@@ -91,8 +91,8 @@
         <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
 
         <!-- Required  . Enable it you can get statistics data with channel -->
-        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
-        <meta-data android:name="JPUSH_APPKEY" android:value="e23387da6e8637eaeaa2c3e5" /> <!--  </>值来自开发者平台取得的AppKey-->
+        <!--<meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>-->
+        <!--<meta-data android:name="JPUSH_APPKEY" android:value="e23387da6e8637eaeaa2c3e5" /> &lt;!&ndash;  </>值来自开发者平台取得的AppKey&ndash;&gt;-->
 
     </application>
 
